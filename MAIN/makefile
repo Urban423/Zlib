@@ -13,7 +13,7 @@ fileManager:
 	if not exist "build" mkdir "build"
 
 compiler: ${OBJ}
-	${CC} -o build/${Target} $<
+	${CC} -o build/${Target} ${OBJ}
 
 bin/%.o: %.cpp
 	${CC} -c -o $@ $<
