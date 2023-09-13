@@ -1,7 +1,5 @@
 #pragma once
-
-
-typedef unsigned char byte;
+#include "zlib.h"
 
 struct PNGheader
 {

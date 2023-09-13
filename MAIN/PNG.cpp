@@ -15,7 +15,7 @@ bool compareWithChunkName(const Chunk& head, const char* name)
 int normalizeInt(int x)
 {
 	int res = x;
-	char* tmp = (char*)&res;
+	char* tmp = reinterpret_cast<char*>(&res);
 	int temp = tmp[0];
 	tmp[0] = tmp[3];
 	tmp[3] = temp;
